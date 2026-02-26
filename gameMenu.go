@@ -149,6 +149,7 @@ func main() {
 			return
 		default:
 			fmt.Println("Invalid choice!")
+			fmt.Println("Choose an option:")
 		}
 	}
 }
