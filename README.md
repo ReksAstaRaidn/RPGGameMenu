@@ -1,2 +1,2 @@
 # RPGGameMenu
-a Simple in Terminal Game Menu
+a Simple on Terminal Game Menu
