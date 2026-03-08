@@ -25,6 +25,29 @@ func typewriter(text string, delay time.Duration, jitter time.Duration) {
 	fmt.Println()
 }
 
+func main() {
+	menu1()
+	q := 0
+	fmt.Println("Choose an option:")
+	for q != 3 {
+		var choice int
+		fmt.Scan(&choice)
+		fmt.Print("\n")
+		switch choice {
+		case 1:
+			SC()
+		case 2:
+			saved1()
+		case 3:
+			fmt.Println("Exiting the game. Goodbye!")
+			return
+		default:
+			fmt.Println("Invalid choice!")
+			fmt.Println("Choose an option:")
+		}
+	}
+}
+
 func menu1() {
 	fmt.Println("╔═══════════════════════════════╗")
 	fmt.Println("║         MONSTER HUNTER        ║")
@@ -140,27 +163,4 @@ func SF3() {
 	fmt.Println("Game started!", 20*time.Millisecond, defaultJitter)
 	menu1()
 	fmt.Println("Choose an option:")
-}
-
-func main() {
-	menu1()
-	q := 0
-	fmt.Println("Choose an option:")
-	for q != 3 {
-		var choice int
-		fmt.Scan(&choice)
-		fmt.Print("\n")
-		switch choice {
-		case 1:
-			SC()
-		case 2:
-			saved1()
-		case 3:
-			fmt.Println("Exiting the game. Goodbye!")
-			return
-		default:
-			fmt.Println("Invalid choice!")
-			fmt.Println("Choose an option:")
-		}
-	}
 }
