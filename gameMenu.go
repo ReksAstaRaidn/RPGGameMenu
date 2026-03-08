@@ -68,8 +68,6 @@ func soraStat() {
 	typewriter("Sora Stats: Level 1, HP 100, MP 50", 30*time.Millisecond, defaultJitter)
 	menu1()
 	fmt.Println("Choose an option:")
-	// return to previous menu
-	return
 }
 
 func rikuStat() {
@@ -79,8 +77,6 @@ func rikuStat() {
 	typewriter("Riku Stats: Level 1, HP 120, MP 40", 30*time.Millisecond, defaultJitter)
 	menu1()
 	fmt.Println("Choose an option:")
-	// return to previous menu
-	return
 }
 
 func kairiStat() {
@@ -90,8 +86,6 @@ func kairiStat() {
 	typewriter("Kairi Stats: Level 1, HP 90, MP 60", 30*time.Millisecond, defaultJitter)
 	menu1()
 	fmt.Println("Choose an option:")
-	// return to previous menu
-	return
 }
 
 func saved1() {
@@ -119,18 +113,33 @@ func saved1() {
 }
 
 func SF1() {
-	fmt.Println("Loading Save File 1...")
-	fmt.Println("Save File 1 Loaded!")
+	fmt.Println("Loading Save File 1...", 20*time.Millisecond, defaultJitter)
+	fmt.Println("Save File 1 Loaded!", 40*time.Millisecond, defaultJitter)
+	fmt.Println("game progress loaded from Save File 1!", 30*time.Millisecond, defaultJitter)
+	fmt.Println("Character: Sora, Level 10, HP 500, MP 200", 50*time.Millisecond, defaultJitter)
+	fmt.Println("Game started!", 20*time.Millisecond, defaultJitter)
+	menu1()
+	fmt.Println("Choose an option:")
 }
 
 func SF2() {
-	fmt.Println("Loading Save File 2...")
-	fmt.Println("Save File 2 Loaded!")
+	fmt.Println("Loading Save File 2...", 20*time.Millisecond, defaultJitter)
+	fmt.Println("Save File 2 Loaded!", 40*time.Millisecond, defaultJitter)
+	fmt.Println("game progress loaded from Save File 2!", 30*time.Millisecond, defaultJitter)
+	fmt.Println("Character: Riku, Level 15, HP 700, MP 150", 50*time.Millisecond, defaultJitter)
+	fmt.Println("Game started!", 20*time.Millisecond, defaultJitter)
+	menu1()
+	fmt.Println("Choose an option:")
 }
 
 func SF3() {
-	fmt.Println("Loading Save File 3...")
-	fmt.Println("Save File 3 Loaded!")
+	fmt.Println("Loading Save File 3...", 20*time.Millisecond, defaultJitter)
+	fmt.Println("Save File 3 Loaded!", 40*time.Millisecond, defaultJitter)
+	fmt.Println("game progress loaded from Save File 3!", 30*time.Millisecond, defaultJitter)
+	fmt.Println("Character: Kairi, Level 20, HP 600, MP 300", 50*time.Millisecond, defaultJitter)
+	fmt.Println("Game started!", 20*time.Millisecond, defaultJitter)
+	menu1()
+	fmt.Println("Choose an option:")
 }
 
 func main() {
